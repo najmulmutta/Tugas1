@@ -1,0 +1,13 @@
+package toko_buku;
+
+import toko_buku.form.FrmMain;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+public class Toko_buku {
+
+    public static EntityManagerFactory emf= Persistence.createEntityManagerFactory("toko_bukuPU");
+    public static void main(String[] args) {
+        new FrmMain().setVisible(true);
+    }
+    
+}
